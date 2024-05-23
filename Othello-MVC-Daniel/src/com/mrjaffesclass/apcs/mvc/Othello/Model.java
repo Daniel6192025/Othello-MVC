@@ -2,6 +2,7 @@ package com.mrjaffesclass.apcs.mvc.Othello;
 
 import com.mrjaffesclass.apcs.messenger.*;
 
+
 /**
  * The model represents the data that the app uses.
  * @author Roger Jaffe
@@ -24,7 +25,8 @@ public class Model implements MessageHandler {
    */
   public Model(Messenger messages) {
     mvcMessaging = messages;
-    this.board = new int[8][8];
+    
+    
     
   }
   
@@ -32,7 +34,17 @@ public class Model implements MessageHandler {
    * Initialize the model here and subscribe to any required messages
    */
   public void init() {
+      this.board = new int[8][8];
+      
     
+  }
+  
+  private void newGame(){
+      for (int row = 0; row < this board.length; row++) {
+        for (int col = 0; col < this.board[0].length; col++) {
+            
+        }
+  }
   }
   
   @Override
